@@ -2,7 +2,7 @@
 
 ## 🥁 CarnaCode 2026 - Desafio 10 - Facade
 
-Oi, eu sou o [seu nome aqui] e este é o espaço onde compartilho minha jornada de aprendizado durante o desafio **CarnaCode 2026**, realizado pelo [balta.io](https://balta.io). 👻
+Oi, eu sou a Mônica e este é o espaço onde compartilho minha jornada de aprendizado durante o desafio **CarnaCode 2026**, realizado pelo [balta.io](https://balta.io). 👻
 
 Aqui você vai encontrar projetos, exercícios e códigos que estou desenvolvendo durante o desafio. O objetivo é colocar a mão na massa, testar ideias e registrar minha evolução no mundo da tecnologia.
 
@@ -26,3 +26,9 @@ Minha principal fonte de conhecimento durante o desafio foi o eBook gratuito [Fu
 
 ### Veja meu progresso no desafio
 [Incluir link para o repositório central]
+
+###📦 Facade Pattern (Padrão Fachada)
+
+O Facade é um padrão estrutural que fornece uma interface simples e unificada para um conjunto de interfaces complexas de um subsistema.
+
+Em vez de o cliente precisar conhecer e interagir com várias classes e fluxos internos, ele se comunica apenas com a fachada, que centraliza e orquestra as chamadas necessárias.
