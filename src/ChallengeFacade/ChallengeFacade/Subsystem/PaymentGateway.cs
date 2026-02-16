@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ChallengeFacade.Subsystem
+{
+    public class PaymentGateway
+    {
+        public string InitializeTransaction(decimal amount)
+        {
+            Console.WriteLine($"[Pagamento] Inicializando transação de R$ {amount:N2}");
+            return $"TXN{Guid.NewGuid().ToString().Substring(0, 8)}";
+        }
+
+        public bool ValidateCard(string cardNumber, string cvv)
+        {
+            Console.WriteLine($"[Pagamento] Validando cartão {cardNumber}");
+            return cardNumber.Length == 16;
+        }
+
+        public bool ProcessPayment(string transactionId, string cardNumber)
+        {
+            Console.WriteLine($"[Pagamento] Processando pagamento {transactionId}");
+            return true;
+        }
+
+        public void RollbackTransaction(string transactionId)
+        {
+            Console.WriteLine($"[Pagamento] Revertendo transação {transactionId}");
+        }
+    }
+}
